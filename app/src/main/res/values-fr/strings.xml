@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" Thème et style de pratique"</string>
+    <string name="header_image">Image d\'en-tête</string>
+    <string name="app_dark_mode">Mode sombre de l\'application</string>
+    <string name="enable_dark_mode">Thèmes de pratique, localisation et personnalisation des boutons</string>
+    <string name="button_on_off">Bouton marche / arrêt</string>
+    <string name="practice_themes">" Thèmes de pratique, localisation et personnalisation des boutons"</string>
+</resources>

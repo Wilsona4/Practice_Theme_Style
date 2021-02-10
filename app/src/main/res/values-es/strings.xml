@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" Tema de práctica y estilo"</string>
+    <string name="header_image">Imagen de cabecera</string>
+    <string name="app_dark_mode">" Modo oscuro de la aplicación"</string>
+    <string name="enable_dark_mode">Habilitar el modo oscuro</string>
+    <string name="button_on_off">" Botón de encendido / apagado"</string>
+    <string name="practice_themes">" Práctica de temas, localización y personalización de botones"</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Practice_Theme_Style</string>
+    <string name="header_image">Header Image</string>
+    <string name="app_dark_mode">App Dark Mode</string>
+    <string name="practice_themes">Practice Themes, Localization and Button Customization</string>
+    <string name="enable_dark_mode">Enable Dark Mode</string>
+    <string name="button_on_off">Button On/Off</string>
+
+</resources>
