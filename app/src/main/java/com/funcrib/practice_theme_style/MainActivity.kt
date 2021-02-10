@@ -3,6 +3,8 @@ package com.funcrib.practice_theme_style
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
+import android.widget.CompoundButton
+import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 
@@ -11,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val button: Button = findViewById(R.id.button)
+        val switch: Switch = findViewById(R.id.bt_switch)
 
         val appSettingsPreferences: SharedPreferences =
             getSharedPreferences("AppSettingsPreferences", 0)
@@ -37,6 +40,10 @@ class MainActivity : AppCompatActivity() {
                 sharedPreferencesEdit.apply()
                 button.text = "Disable Dark Mode"
             }
+        }
+
+        switch.setOnCheckedChangeListener { _, isChecked ->
+            button.isEnabled = isChecked
         }
     }
 }

@@ -14,5 +14,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="buttonStyle">@style/customButton</item>
+    </style>
+    
+    <style name="customButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/custom_button</item>
     </style>
 </resources>
