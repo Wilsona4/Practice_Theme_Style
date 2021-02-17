@@ -1,14 +1,15 @@
 package com.funcrib.practice_theme_style
 
+import android.annotation.SuppressLint
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
-import android.widget.CompoundButton
 import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("UseSwitchCompatOrMaterialCode")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,10 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         if (isNightModeOn) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            button.text = "Disable Night Mode"
+            button.text = R.string.disable_dark_mode.toString()
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            button.text = "Enable Dark Mode"
+            button.text = R.string.enable_dark_mode.toString()
         }
 
         button.setOnClickListener {
@@ -33,12 +34,12 @@ class MainActivity : AppCompatActivity() {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
                 sharedPreferencesEdit.putBoolean("Night Mode", false)
                 sharedPreferencesEdit.apply()
-                button.text = "Enable Night Mode"
+                button.text = R.string.enable_dark_mode.toString()
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
                 sharedPreferencesEdit.putBoolean("Night Mode", true)
                 sharedPreferencesEdit.apply()
-                button.text = "Disable Dark Mode"
+                button.text = R.string.disable_dark_mode.toString()
             }
         }
 

@@ -4,6 +4,7 @@
     <string name="app_dark_mode">App Dark Mode</string>
     <string name="practice_themes">Practice Themes, Localization and Button Customization</string>
     <string name="enable_dark_mode">Enable Dark Mode</string>
+    <string name="disable_dark_mode">Disable Dark Mode</string>
     <string name="button_on_off">Button On/Off</string>
 
 </resources>
