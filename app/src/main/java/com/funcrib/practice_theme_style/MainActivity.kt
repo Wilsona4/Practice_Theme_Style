@@ -23,10 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         if (isNightModeOn) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            button.text = R.string.disable_dark_mode.toString()
+            button.text = getString(R.string.disable_dark_mode)
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            button.text = R.string.enable_dark_mode.toString()
+            button.text = getString(R.string.enable_dark_mode)
         }
 
         button.setOnClickListener {
@@ -34,12 +34,12 @@ class MainActivity : AppCompatActivity() {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
                 sharedPreferencesEdit.putBoolean("Night Mode", false)
                 sharedPreferencesEdit.apply()
-                button.text = R.string.enable_dark_mode.toString()
+                button.text = getString(R.string.enable_dark_mode)
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
                 sharedPreferencesEdit.putBoolean("Night Mode", true)
                 sharedPreferencesEdit.apply()
-                button.text = R.string.disable_dark_mode.toString()
+                button.text = getString(R.string.disable_dark_mode)
             }
         }
 
